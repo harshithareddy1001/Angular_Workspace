@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Table Example</title>
+</head>
+<body>
+
+<h2>Multiplication Table Generator</h2>
+
+<label>Enter Rows:</label>
+<input type="number" id="rows"><br><br>
+
+<label>Enter Columns:</label>
+<input type="number" id="cols"><br><br>
+
+<button onclick="createTable()">Generate Table</button>
+
+<br><br>
+<div id="output"></div>
+
+<script>
+function createTable() {
+
+    let rows = document.getElementById("rows").value;
+    let cols = document.getElementById("cols").value;
+
+    // Alert rows and columns
+    alert("Rows: " + rows + "\nColumns: " + cols);
+
+    let table = "<table border='1' cellpadding='5'>";
+
+    for (let i = 1; i <= rows; i++) {
+        table += "<tr>";
+
+        for (let j = 1; j <= cols; j++) {
+            table += "<td>" + (i * j) + "</td>";
+        }
+
+        table += "</tr>";
+    }
+
+    table += "</table>";
+
+    document.getElementById("output").innerHTML = table;
+}
+</script>
+
+</body>
+</html>
