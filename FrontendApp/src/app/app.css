@@ -1,0 +1,48 @@
+/* Full Layout */
+.layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+.header {
+  background-color: #1e1e2f;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+/* Body */
+.body {
+  display: flex;
+  flex: 1;
+}
+
+/* Left Sidebar */
+.left {
+  width: 20%;
+}
+
+/* Center Content */
+.content {
+  width: 60%;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+/* Right Sidebar */
+.right {
+  width: 20%;
+}
+
+/* Footer */
+.footer {
+  background-color: #1e1e2f;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
