@@ -7,6 +7,7 @@ import { Green } from './green/green';
 import { Orange } from './orange/orange';
 import { Catalog } from './catalog/catalog';
 import { AddBook } from './add-book/add-book';
+import { Laptop } from './laptop/laptop';
 
 const routes: Routes = [
  { path:'',redirectTo:'red',pathMatch:'full' },   
@@ -16,7 +17,8 @@ const routes: Routes = [
   {path:'green', component:Green},
 {path:'orange', component:Orange},
 {path:'catalog', component:Catalog},  
-{path:'add-book', component:AddBook}
+{path:'add-book', component:AddBook},
+{path:'laptop', component:Laptop}
 ];
 
 @NgModule({

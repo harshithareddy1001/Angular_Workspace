@@ -1,5 +1,6 @@
 import { NgModule, provideBrowserGlobalErrorListeners } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';  
 
 import { AppRoutingModule } from './app-routing-module';
 import { App } from './app';
@@ -11,7 +12,8 @@ import { Green } from './green/green';
 import { Orange } from './orange/orange';
 import { Catalog } from './catalog/catalog';
 import { AddBook } from './add-book/add-book';
-import { UpdateBook } from './update-book/update-book'; 
+import { UpdateBook } from './update-book/update-book';
+import { Laptop } from './laptop/laptop'; 
 
 @NgModule({
   declarations: [
@@ -23,12 +25,14 @@ import { UpdateBook } from './update-book/update-book';
     Orange,
     Catalog,
     AddBook,
-    UpdateBook
+    UpdateBook,
+    Laptop
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
     
   ],
   providers: [
