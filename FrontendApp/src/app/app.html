@@ -46,6 +46,8 @@
       </div>
       <app-blue></app-blue>
       <div class="container">
+       
+       
 
   <h1>Angular Routing Demo</h1>
 
@@ -60,6 +62,14 @@
   <div class="content">
     <router-outlet></router-outlet>
   </div>
+   <h1>List of Books</h1>
+        <nav>
+          <a routerLink="/catalog" routerLinkActive="active">Catalog</a>
+          <a routerLink="/add-book" routerLinkActive="active">AddBook</a>
+        </nav>
+          <app-catalog></app-catalog>
+          <app-update-book></app-update-book>
+          <app-add-book></app-add-book>
 
 </div>
 

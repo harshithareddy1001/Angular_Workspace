@@ -1,0 +1,25 @@
+<h2>Book List</h2>
+
+<ul>
+  <li *ngFor="let book of booklist">
+    {{book.id}} - {{book.title}}
+
+    <!-- <button (click)="editBook(book)">Edit</button> -->
+    <button (click)="deleteBook(book.id)">Delete</button>
+  </li>
+</ul>
+
+<hr>
+
+<!-- Show only when editing -->
+<!-- <div *ngIf="editMode">
+  <h3>Update Book</h3>
+
+  <label>ID:</label>
+  <input type="number" [(ngModel)]="editId" disabled>
+
+  <label>Title:</label>
+  <input type="text" [(ngModel)]="editTitle">
+
+  <button (click)="updateBook()">Update</button>
+</div> -->
